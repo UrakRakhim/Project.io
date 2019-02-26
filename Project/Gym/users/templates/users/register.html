@@ -1,0 +1,18 @@
+{% extends 'users/base.html' %}
+{% load  static %}
+{% block  content %}
+
+<!-- <a href=""> My name is Dimash</a> -->
+<div class="Container">
+	<form method="POST">
+		{% csrf_token %}
+		<fieldset>
+			<legend>Join to us</legend>
+		</fieldset>
+		<div class="Button">
+			<button class="IButton">Sign Up</button>
+		</div>
+	</form>
+	<div>You have an account?Please<a href=""> Sign in</a></div>
+</div>
+{% endblock content %}
